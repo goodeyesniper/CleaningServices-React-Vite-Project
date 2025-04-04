@@ -1,0 +1,323 @@
+.custom-btn-container {
+    color: #FFF;
+    position: relative;
+    /* text-transform: uppercase; */
+    margin: 0 40px;
+    /* padding: 15px 30px; */
+    /* letter-spacing: 1px; */
+    cursor: pointer;
+    border-radius: 50px;
+    overflow: hidden;
+    border: none;
+}
+.custom-btn-container:before {
+    content: '';
+    position: absolute;
+    height: 200px;
+    width: 80px;
+    background: #F3F3F3;
+    box-shadow: 0 0 10px #FFF;
+    filter: blur(1px);
+    opacity: 0.2;
+    top: -100px;
+    transform: rotate(-20deg) translate(-200px);
+}
+
+/* .custom-btn-container:hover:before {
+    transform: rotate(-20deg) translate(200px, 70px);
+} */
+
+.custom-btn {
+    background: linear-gradient(to right, #198754, #198754);
+}
+
+.custom-btn-container:hover:before {
+    animation: flowOnce 0.5s forwards; /* Trigger animation */
+}
+
+/* Define the keyframes for the animation */
+@keyframes flowOnce {
+    0% {
+        transform: rotate(-20deg) translate(-200px);
+    }
+    100% {
+        transform: rotate(-20deg) translate(200px, 70px); /* Ending position */
+    }
+}
+
+.banner-text {
+    margin: 0;
+    padding: 0;
+    font-family: "Playball", cursive;
+    font-weight: 400;
+    font-size: 2.4rem;
+    font-style: normal;
+    transform: scale(1.5, 1); /* Stretches text horizontally (1.5x) */
+    transform-origin: left; /* Transformation starts from the left edge */
+    display: inline-block; /* Ensures transform works correctly */
+    margin-bottom: 0; /* Removes bottom space below this element */
+    line-height: 1; /* Adjusts line spacing for tighter layout */
+}
+
+.banner-subtitle-text {
+    font-size: 1rem;
+    margin-top: 0; /* Removes top space above this element */
+    padding: 0;
+    font-weight: 500;
+}
+
+html, body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.more-than-ten {
+    width: 600px;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+#about-us-meeting-img {
+    height: 430px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 991px) {
+    .more-than-ten {
+        width: 100vw;
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.our-team-container {
+    width: 370px;
+}
+
+.our-team-img {
+    width: 300px;
+    padding: 10px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.satisfaction-guaranteed {
+    background-color: #4BA0E8;
+    padding: 20px;
+    position: relative;
+    z-index: 1; /* Ensures it's above the background extension */
+}
+
+.banner-guaranteed-img {
+    position: relative;
+    z-index: 2; /* Keeps the image above the background */
+}
+
+.satisfaction-guaranteed::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -340px; /* Adjust to cover part of the image */
+    width: calc(100% + 50px); /* Extends background to the left */
+    height: 100%; /* Covers half of the image */
+    background-color: #4BA0E8;
+    z-index: -1; /* Places it behind the image */
+}
+
+.our-services {
+    width: 370px;
+}
+
+.our-services a {
+    text-decoration: none !important;
+    color: #69C064 !important;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.our-services-slide a {
+    text-decoration: none !important;
+    color: #69C064 !important;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+#our-services-img {
+    width: 300px;
+    height: auto;
+}
+
+.schedule-a-free-cleaning {
+    width: 1170px;
+    background-color: #48ADDB;
+    display: block;
+}
+
+.schedule-a-free-cleaning-sm {
+    background-color: #48ADDB;
+    display: none;
+}
+
+@media (max-width: 1169px) {
+    .schedule-a-free-cleaning {
+        display: none;
+        height: 0;
+        padding: 0;
+        margin: 0;
+    }
+    .schedule-a-free-cleaning-sm {
+        display: block;
+    }
+}
+.carousel-indicators {
+    bottom: -60px !important; /* Adjust position */
+}
+.carousel-indicator {
+    background-color: rgb(216, 216, 216) !important;
+    border: 2px solid white !important;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    opacity: 0.8 !important;
+    transition: opacity 0.3s !important;
+}
+.carousel-indicator.active {
+    background-color: #69C064 !important;
+    opacity: 1 !important;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    padding: 0;
+}
+
+/* .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+  
+/* .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+.swiper-pagination {
+    position: absolute !important;
+    bottom: 0 !important;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+
+.mySwiper {
+    position: relative;
+    padding-bottom: 100px;
+    height: 420px;
+}
+
+.our-prices-type {
+    border: 1px solid #E6E9EC;
+}
+.our-prices-rate {
+    border: 1px solid #E6E9EC;
+    color: #69C064;
+}
+.our-prices-time {
+    border: 1px solid #E6E9EC;
+}
+.our-prices-button {
+    border: 1px solid #E6E9EC;
+}
+
+.swiper-container-outside {
+    position: relative;
+}
+
+.custom-prev,
+.custom-next {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    /* background: #fff; */
+    color: #69C064;
+    border: none;
+    padding: 10px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.custom-prev {
+    left: -40px;
+}
+
+.custom-next {
+    right: -40px;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+    background: #1e7e34;
+}
+
+@media (max-width: 620px) {
+    .custom-prev {
+        left: -20px;
+    }
+    .custom-next {
+        right: -20px;
+    }
+}
+
+.contact-info {
+    background-color: #F6F6F7;
+}
+
+.book-a-cleaning-service {
+    border-bottom: 1px solid #E6E9EC;
+}
+
+.book-a-cleaning-service-top-border {
+    border-top: 1px solid #E6E9EC;
+}
+
+.services-field-bg {
+    background-color: #F9F9F9;
+}
+
+.basic-info-bg {
+    background-color: #FFFFFF;
+}
+
+.custom-checkbox-calculator {
+    width: 14px; /* Increase width */
+    height: 14px; /* Increase height */
+}
+
+.calculator-base-text {
+    font-size: 1.0rem;
+}
+
+.service-name {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.calculator-bg {
+    background-color: #8CCAF7;
+}
